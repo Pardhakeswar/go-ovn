@@ -238,6 +238,11 @@ type Client interface {
 	PortGroupDel(group string) (*OvnCommand, error)
 	// Get PortGroup data structure if it exists
 	PortGroupGet(group string) (*PortGroup, error)
+	// Datapath binding
+	DatapathBindingGetByName(name string) ([]*DatapathBinding, error)
+
+	// Port binding
+	PortBindingList(searchMap map[string]string) ([]*PortBinding, error)
 
 	// Close connection to OVN
 	Close() error
