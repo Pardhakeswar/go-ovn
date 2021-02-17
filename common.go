@@ -53,6 +53,7 @@ const (
 	TableEncap                    string = "Encap"
 	TableSBGlobal                 string = "SB_Global"
 	TableChassisPrivate           string = "Chassis_Private"
+	TableChassisDummy             string = "Dummy"
 )
 
 var NBTablesOrder = []string{
@@ -82,4 +83,5 @@ var SBTablesOrder = []string{
 	TableChassisPrivate,
 	TableEncap,
 	TableSBGlobal,
+	TableChassisDummy,
 }
